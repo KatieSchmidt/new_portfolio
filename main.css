@@ -81,3 +81,58 @@ h2 {
   width: auto;
   margin-top: 5vh;
 }
+
+.project-intro {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.project__box-list-item {
+  background-color: rgba(36, 36, 36, 0.5);
+  margin-bottom: 25vh;
+  height: 50vh;
+  width: 100vw;
+  transform: skew(45deg);
+  position: relative;
+  border-radius: 10px;
+}
+
+.list-item-box {
+  position: absolute;
+  width: 45vh;
+  height: 45vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) skew(-45deg);
+  background-color: rgb(36, 36, 36);
+  border-radius: 10px;
+  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.project__box-list-item-name {
+  background-image: linear-gradient(to right, #0000ff, #ffc0cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 1em;
+}
+
+.project__box-list-item-description {
+  color: white;
+}
+
+.project__box-list-item-technologies {
+  color: rgb(146, 146, 146);
+  text-align: center;
+}
+
+.link-box {
+  display: flex;
+  justify-content: space-evenly;
+}
