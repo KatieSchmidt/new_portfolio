@@ -105,17 +105,10 @@ h2 {
   text-align: center;
 }
 
-/* .project__box-list-item-name {
-  background-image: linear-gradient(to right, #0000ff, #ffc0cb);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  text-align: center;
-  font-size: 1em;
-} */
-
 .project__box-list-item-description {
   color: white;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .project__box-list-item-technologies {
