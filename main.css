@@ -14,11 +14,6 @@ html {
   display: none;
 }
 
-.section__about {
-  background-color: rgb(36, 36, 36);
-  color: white;
-}
-
 header {
   width: 100%;
   background-image: linear-gradient(to right, #0000ff, #ffc0cb);
@@ -29,6 +24,15 @@ header {
   font-size: 1.5em;
   padding-top: 10vh;
   padding-bottom: 10vh;
+}
+
+h2 {
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
+}
+
+.section__about {
+  background-color: rgb(36, 36, 36);
+  color: white;
 }
 
 .about__info {
@@ -52,4 +56,28 @@ header {
   transform: translate(-50%);
   text-align: center;
   line-height: 1.5;
+}
+
+.tech-intro {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+.tech__box-list {
+  list-style: none;
+  width: 100vw;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.tech__box-list-item {
+  justify-self: center;
+}
+
+.tech__box-image {
+  height: 10vh;
+  width: auto;
+  margin-top: 5vh;
 }
