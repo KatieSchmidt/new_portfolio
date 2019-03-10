@@ -136,3 +136,32 @@ h2 {
   display: flex;
   justify-content: space-evenly;
 }
+
+.section__contact {
+  background-image: linear-gradient(to right, #0000ff, #ffc0cb);
+}
+
+.contact__header {
+  color: white;
+}
+
+.contact__intro {
+  text-align: center;
+  padding: 0 10% 10% 10%;
+}
+
+.contact__list-link,
+.contact__list-link:link,
+.contact__list-link:active,
+.contact__list-link:visited {
+  color: black;
+  font-size: 2em;
+}
+
+.contact__box-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+  padding-bottom: 10%;
+}
