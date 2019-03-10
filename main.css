@@ -105,10 +105,14 @@ h2 {
   text-align: center;
 }
 
+.project__box-list-item-name {
+  font-size: 1.5rem;
+}
+
 .project__box-list-item-description {
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .project__box-list-item-technologies {
