@@ -82,12 +82,17 @@ h2 {
 
 .project__box-list-item {
   background-color: rgba(36, 36, 36, 0.5);
-  margin-bottom: 25vh;
+  margin-bottom: 5vh;
   height: 50vh;
   width: 100vw;
   transform: skew(45deg);
   position: relative;
   border-radius: 10px;
+  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project__box-list-item:not(:first-child) {
+  margin-top: 15vh;
 }
 
 .list-item-box {
@@ -125,6 +130,34 @@ h2 {
 .link-box {
   display: flex;
   justify-content: space-evenly;
+}
+
+.link-box p,
+.link-box p:link,
+.link-box p:active,
+.link-box p:visited {
+  color: pink;
+}
+
+.list-item-photo-box {
+  width: 100vw;
+  height: 20vh;
+  background-color: lightgrey;
+  margin-bottom: 5vh;
+  overflow: scroll;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 2.5vh;
+  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  margin-top: 2.5vh;
+  margin-right: 2.5vh;
+  height: 15vh;
+  width: auto;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
 }
 
 .section__contact {
