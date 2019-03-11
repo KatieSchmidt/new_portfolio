@@ -26,7 +26,25 @@ h2 {
   height: 99vh;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+}
+
+.about__header {
+  background-image: linear-gradient(to right, #0000ff, #ffc0cb);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 25vh;
+}
+
+.about__info {
+  margin-top: 20vh;
+}
+
+.about-text {
+  margin-top: 5vh;
+  color: grey;
 }
 
 .tech-intro {
