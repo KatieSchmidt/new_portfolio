@@ -10,12 +10,55 @@ html {
   box-sizing: border-box;
 }
 
+h2 {
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
+}
+
+.nav-button-close {
+  position: fixed;
+  right: 5vh;
+  top: 5vh;
+  font-size: 2rem;
+  color: black;
+}
+
+.nav-button-open {
+  position: fixed;
+  right: 5vh;
+  top: 5vh;
+  font-size: 2rem;
+  color: rgb(255, 192, 203);
+  z-index: 2;
+}
+
 .navigation {
+  background-image: radial-gradient(#0000ff, #ffc0cb);
+  position: fixed;
+  height: 99vh;
+  width: 99vw;
+  z-index: 3;
+  transition-duration: all 2s;
+}
+
+.navigation-hidden {
   display: none;
 }
 
-h2 {
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
+.navigation__list {
+  text-align: center;
+  height: 99vh;
+  width: 99vw;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.navigation__list-item a,
+.navigation__list-item a:link,
+.navigation__list-item a:active,
+.navigation__list-item a:visited {
+  color: black;
 }
 
 .section__about {
@@ -51,6 +94,11 @@ h2 {
   text-align: center;
   margin-bottom: 10vh;
   padding: 0 10% 0 10%;
+}
+
+.tech-box-list-skew {
+  background-color: rgba(36, 36, 36, 0.5);
+  padding: 10vh 0 10vh 0;
 }
 
 .tech__box-list {
@@ -110,6 +158,7 @@ h2 {
   flex-direction: column;
   justify-content: space-evenly;
   text-align: center;
+  overflow: scroll;
 }
 
 .project__box-list-item-name {
@@ -203,4 +252,11 @@ h2 {
   text-align: center;
   padding-top: 10%;
   padding-bottom: 10%;
+}
+
+.header {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

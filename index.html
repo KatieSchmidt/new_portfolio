@@ -16,17 +16,32 @@
   </head>
 
   <body>
-    <nav class="navigation">
-      <ul>
-        <li>About</li>
-        <li>Technologies</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>Resume</li>
+    <div class="nav-button-open">
+      <i class="fas fa-bars"></i>
+    </div>
+
+    <nav class="navigation navigation-hidden">
+      <div class="nav-button-close">
+        <i class="fas fa-times"></i>
+      </div>
+
+      <ul class="navigation__list">
+        <li class="navigation__list-item">
+          <a href="#about">About</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#technologies">Technologies</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#projects">Projects</a>
+        </li>
+        <li class="navigation__list-item">
+          <a href="#contact">Contact</a>
+        </li>
       </ul>
     </nav>
 
-    <section class="section__about">
+    <section class="section__about" id="about">
       <h1 class="about__header">My Name is Katie Schmidt.</h1>
 
       <div class="about__info">
@@ -41,81 +56,87 @@
       </div>
     </section>
 
-    <section class="section__tech">
-      <h2 class="technology__header colorful-header">Technology</h2>
-
-      <div class="tech__info">
+    <section class="section__tech" id="technologies">
+      <header class="header">
+        <h2 class="technology__header colorful-header">Technology</h2>
         <h3 class="tech-intro">
           I am confident using the following technologies and happily learning
           new tools regularly.
         </h3>
-        <ul class="tech__box-list">
-          <li class="tech__box-list-item">
-            <img
-              src="./images/HTML5_Logo_128.png"
-              alt="html5 logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/css3-logo-small.png"
-              alt="CSS3 logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/javascript.png"
-              alt="javascript logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/node.png"
-              alt="node logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/mongoDB-transparent.png"
-              alt="mongo logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/react.png"
-              alt="react logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/Redux.png"
-              alt="redux logo"
-              class="tech__box-image"
-            />
-          </li>
-          <li class="tech__box-list-item">
-            <img
-              src="./images/bootstrap.png"
-              alt="bootstrap logo"
-              class="tech__box-image"
-            />
-          </li>
-        </ul>
+      </header>
+
+      <div class="tech__info">
+        <div class="tech-box-list-skew">
+          <ul class="tech__box-list">
+            <li class="tech__box-list-item">
+              <img
+                src="./images/HTML5_Logo_128.png"
+                alt="html5 logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/css3-logo-small.png"
+                alt="CSS3 logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/javascript.png"
+                alt="javascript logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/node.png"
+                alt="node logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/mongoDB-transparent.png"
+                alt="mongo logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/react.png"
+                alt="react logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/Redux.png"
+                alt="redux logo"
+                class="tech__box-image"
+              />
+            </li>
+            <li class="tech__box-list-item">
+              <img
+                src="./images/bootstrap.png"
+                alt="bootstrap logo"
+                class="tech__box-image"
+              />
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
-    <section class="section__projects">
-      <h2 class="projects__header colorful-header">Projects</h2>
-
-      <div class="project__info">
+    <section class="section__projects" id="projects">
+      <header class="header">
+        <h2 class="projects__header colorful-header">Projects</h2>
         <h3 class="project-intro">
           Take a peek at a few of the projects I have created.
         </h3>
+      </header>
+
+      <div class="project__info">
         <div class="project__box">
           <ul class="project__box-list">
             <li class="project__box-list-item">
@@ -374,7 +395,7 @@
         </div>
       </div>
     </section>
-    <section class="section__contact">
+    <section class="section__contact" id="contact">
       <h2 class="contact__header">Contact</h2>
 
       <p class="contact__intro">
