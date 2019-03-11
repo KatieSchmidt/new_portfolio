@@ -99,12 +99,6 @@ html {
   padding: 0 10% 0 10%;
 }
 
-.tech-box-list-skew {
-  background-color: rgba(36, 36, 36, 0.5);
-  padding: 10vh 0 10vh 0;
-  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
-}
-
 .tech__box-list {
   list-style: none;
   width: 100vw;
@@ -273,4 +267,77 @@ h2 {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+}
+
+@media only screen and (min-width: 800px) {
+  .project__box-list-item:not(:first-child) {
+    margin-top: 0vh;
+  }
+
+  .list-item-photo-box {
+    border-radius: 10px;
+  }
+  .project__box-list {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 50vh 20vh 50vh 20vh;
+    list-style: none;
+    grid-gap: 5vh;
+  }
+
+  .project__box-list-item-1 {
+    width: 40vw;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .list-item-photo-box-1 {
+    width: 40vw;
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .project__box-list-item-2 {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  .list-item-photo-box-2 {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .project__box-list-item-3 {
+    width: 40vw;
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  .list-item-photo-box-3 {
+    width: 40vw;
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .project__box-list-item-4 {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+  .list-item-photo-box-4 {
+    width: 40vw;
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+
+  .project__box-list-item {
+    transform: skew(0deg);
+  }
+
+  .list-item-box {
+    transform: skew(0deg) translate(-50%, -50%);
+  }
 }
