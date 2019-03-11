@@ -50,6 +50,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  padding-top: 20vh;
+  padding-bottom: 20vh;
 }
 
 .navigation__list-item a,
