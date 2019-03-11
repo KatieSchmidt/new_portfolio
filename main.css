@@ -10,9 +10,7 @@ html {
   box-sizing: border-box;
 }
 
-h2 {
-  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
-}
+/*----------navigation stuff----------*/
 
 .nav-button-close {
   position: fixed;
@@ -32,10 +30,10 @@ h2 {
 }
 
 .navigation {
-  background-image: radial-gradient(#0000ff, #ffc0cb);
+  background-image: radial-gradient(#ffc0cb, #0000ff);
   position: fixed;
-  height: 99vh;
-  width: 99vw;
+  height: 100%;
+  width: 100%;
   z-index: 3;
   transition-duration: all 2s;
 }
@@ -60,6 +58,8 @@ h2 {
 .navigation__list-item a:visited {
   color: black;
 }
+
+/*----------about----------*/
 
 .section__about {
   background-color: rgb(36, 36, 36);
@@ -90,6 +90,7 @@ h2 {
   color: grey;
 }
 
+/*----------technology----------*/
 .tech-intro {
   text-align: center;
   margin-bottom: 10vh;
@@ -99,6 +100,7 @@ h2 {
 .tech-box-list-skew {
   background-color: rgba(36, 36, 36, 0.5);
   padding: 10vh 0 10vh 0;
+  box-shadow: 6px 7px 6px rgba(0, 0, 0, 0.3);
 }
 
 .tech__box-list {
@@ -118,6 +120,8 @@ h2 {
   width: auto;
   margin-top: 5vh;
 }
+
+/*----------projects----------*/
 
 .section__projects {
   overflow: hidden;
@@ -209,6 +213,8 @@ h2 {
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
 }
 
+/*----------contact----------*/
+
 .section__contact {
   background-image: linear-gradient(to right, #0000ff, #ffc0cb);
   text-align: center;
@@ -244,6 +250,12 @@ h2 {
   padding-bottom: 10%;
 }
 
+/*----------heading styles for classes in any section----------*/
+
+h2 {
+  text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
+}
+
 .colorful-header {
   background-image: linear-gradient(to right, #0000ff, #ffc0cb);
   background-clip: text;
@@ -258,5 +270,5 @@ h2 {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
 }
