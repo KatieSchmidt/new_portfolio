@@ -248,7 +248,7 @@ html {
 
 /*----------heading styles for classes in any section----------*/
 
-h2 {
+.about__intro {
   text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.473);
 }
 
@@ -258,18 +258,57 @@ h2 {
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  font-size: 1.8rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.header {
+h2.colorful-header {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+
+/* .header {
   height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
+} */
 
 @media only screen and (min-width: 800px) {
+  .colorful-header {
+    font-size: 2rem;
+  }
+  .about__header {
+    font-size: 4rem;
+  }
+
+  .about-intro {
+    font-size: 2rem;
+  }
+  .about-text {
+    font-size: 1.5rem;
+  }
+
+  .tech-intro {
+    font-size: 1.5rem;
+  }
+
+  .project-intro {
+    font-size: 1.5rem;
+    padding-bottom: 10vh;
+  }
+
+  .tech__box-list {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .tech__box-image {
+    height: 10vh;
+    width: auto;
+    margin-top: 15vh;
+  }
+
   .project__box-list-item:not(:first-child) {
     margin-top: 0vh;
   }
@@ -339,5 +378,92 @@ h2 {
 
   .list-item-box {
     transform: skew(0deg) translate(-50%, -50%);
+  }
+
+  .contact__header {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .colorful-header {
+    background-image: linear-gradient(to right, #0000ff, #ffc0cb);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    font-size: 1.5rem;
+  }
+
+  .section__about {
+    height: 100%;
+    padding-bottom: 10%;
+  }
+
+  .projects__header {
+    font-size: 1.8rem;
+    padding-top: 3%;
+  }
+
+  .project-intro {
+    margin-bottom: 5%;
+  }
+
+  .technology__header {
+    font-size: 1.8rem;
+    padding-top: 3%;
+  }
+
+  .list-item-box {
+    padding: 2%;
+    width: 60%;
+  }
+
+  .project__box-list-item-name {
+    padding-bottom: 1%;
+  }
+
+  .project__box-list-item-description {
+    padding: 0;
+    padding-bottom: 2%;
+    font-size: 0.8rem;
+  }
+
+  .project__box-list-item-technologies {
+    font-size: 0.8rem;
+    padding-bottom: 2%;
+  }
+
+  .link-box p,
+  .link-box p:link,
+  .link-box p:active,
+  .link-box p:visited {
+    font-size: 0.8rem;
+  }
+
+  .section__contact {
+    margin-top: 10vh;
+    height: 90vh;
+  }
+
+  .contact__header {
+    padding: 0;
+  }
+
+  .contact__intro {
+    padding: 0;
+  }
+
+  .contact__list-link,
+  .contact__list-link:link,
+  .contact__list-link:active,
+  .contact__list-link:visited {
+    font-size: 1.5rem;
+  }
+
+  .contact__box-list {
+    padding-bottom: 0%;
   }
 }
